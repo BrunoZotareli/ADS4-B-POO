@@ -7,8 +7,9 @@ import jakarta.persistence.Id;
 
 @Entity
 public class AlunoEntity {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String nome;
@@ -43,4 +44,5 @@ public class AlunoEntity {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
 }
