@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 @Entity
 public class AlunoEntity {
 @Id
-    @GeneratedValue()
+    @GeneratedValue(strategy = )
     private long id;
 
 }
